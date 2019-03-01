@@ -1,0 +1,15 @@
+{
+  "version": "0.0.0",
+  "main": "server.js",
+  "scripts": {
+    "build": "./node_modules/.bin/elm make main.elm --output dist/client.js",
+    "dev": "nodemon --ignore dist/ -e elm,js,json --exec 'npm run build && npm start'"
+  },
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "express": "4.16.4"
+  },
+  "devDependencies": {
+    "elm": "0.19.0-bugfix6"
+  }
+}
